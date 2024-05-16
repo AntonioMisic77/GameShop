@@ -18,7 +18,7 @@ namespace ProdavaonicaIgaraAPI.Repositories
 
         public Task<Article> GetAsync(int id)
         {
-            return _context.Articles.Include(a => a.Supplier).FirstOrDefaultAsync(a => a.Id == id);
+            return _context.Articles.AsNoTracking().Include(a => a.Supplier).FirstOrDefaultAsync(a => a.Id == id);
         }
 
         public Task<List<Article>> GetAllAsync()

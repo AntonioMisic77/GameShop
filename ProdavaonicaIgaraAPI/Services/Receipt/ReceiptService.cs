@@ -58,10 +58,10 @@ namespace ProdavaonicaIgaraAPI.Services.Receipt
         {
             var receiptItems = (await GetReceiptAsync(id)).ReceiptItems.ToList();
 
-            receiptItems.ForEach(async item =>
+            foreach(var item in receiptItems)
             {
                 await _receiptItemService.DeleteReceiptItem(item.Id);
-            });
+            }
 
             var deletedReceipt = await _receiptRepository.DeleteAsync(id);
 

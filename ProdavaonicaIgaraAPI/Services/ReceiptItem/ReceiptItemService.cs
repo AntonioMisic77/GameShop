@@ -78,14 +78,16 @@ namespace ProdavaonicaIgaraAPI.Services
         {
             var article = await _articleService.GetArticleAsync(receiptItemDto.ArticleId);
 
-            if (article.StockQuantity < receiptItemDto.Quantity)
-            {
-                throw new Exception("Not enough stock quantity");
-            }
 
             var oldReceiptItemQuantity = (await _receiptItemRepository.GetAsync(receiptItemDto.Id)).Quantity;
 
             int diff = receiptItemDto.Quantity - oldReceiptItemQuantity;
+
+
+            if (( article.StockQuantity + oldReceiptItemQuantity) < receiptItemDto.Quantity)
+            {
+                throw new Exception("Not enough stock quantity");
+            }
 
             if ( diff < 0)
             {

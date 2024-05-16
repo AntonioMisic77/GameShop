@@ -18,7 +18,7 @@ namespace ProdavaonicaIgaraAPI.Repositories
         }
         public async Task<ReceiptItem> GetAsync(int id)
         {
-            return  await _context.ReceiptItems
+            return  await _context.ReceiptItems.AsNoTracking()
                                   .Include(a => a.Article)
                                   .FirstOrDefaultAsync(a => a.Id == id);
         }
@@ -26,14 +26,14 @@ namespace ProdavaonicaIgaraAPI.Repositories
 
         public async Task<List<ReceiptItem>> GetAllAsync()
         {
-            return await _context.ReceiptItems
+            return await _context.ReceiptItems.AsNoTracking()
                                  .Include(a => a.Article)
                                  .ToListAsync();
         }
 
         public async Task<List<ReceiptItem>> GetPagedReceiptItems(QueryParametars parametars)
         {
-            return await _context.ReceiptItems
+            return await _context.ReceiptItems.AsNoTracking()
                                  .Include(a => a.Article)
                                  .Skip(parametars.StartIndex)
                                  .Take(parametars.PageSize)
@@ -42,7 +42,7 @@ namespace ProdavaonicaIgaraAPI.Repositories
 
         public async Task<int> GetReceiptItemsCount()
         {
-            return await _context.ReceiptItems.CountAsync();
+            return await _context.ReceiptItems.AsNoTracking().CountAsync();
         }
 
 
