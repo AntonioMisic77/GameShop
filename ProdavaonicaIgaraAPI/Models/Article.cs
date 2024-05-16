@@ -9,9 +9,11 @@ namespace ProdavaonicaIgaraAPI.Models
     {
         [Key]
         [Required]
+        [Column("id")]
         public int Id { get; set; }
 
         [Required]
+        [Column("supplierid")]
         public int SupplierId { get; set; }
 
         [ForeignKey(nameof(SupplierId))]
@@ -19,16 +21,20 @@ namespace ProdavaonicaIgaraAPI.Models
 
         [Required]
         [StringLength(100)]
+        [Column("name")]
         public required string Name { get; set; }
 
         [StringLength(500)]
+        [Column("description")]
         public string? Description { get; set; }
 
         [Required]
         [Precision(10,2)]
+        [Column("price")]
         public double Price { get; set; }
 
         [Required]
+        [Column("stockquantity")]
         public int StockQuantity { get; set; }
     }
 }

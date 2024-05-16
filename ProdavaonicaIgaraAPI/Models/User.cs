@@ -11,29 +11,36 @@ namespace ProdavaonicaIgaraAPI.Models
     {
         [Key]
         [Required]
+        [Column("id")]
         public int Id { get; set; }
 
         [Required]
         [StringLength(50)]
+        [Column("firstname")]
         public required string FirstName { get; set; }
 
         [Required]
         [StringLength(50)]
+        [Column("lastname")]
         public required string LastName { get; set; }
 
         [Required]
         [StringLength(50)]
+        [Column("username")]
         public string? Username { get; set; }
 
         [StringLength(50)]
+        [Column("iban")]
         public string? IBAN { get; set; }
 
         [Required]
         [StringLength(100)]
+        [Column("email")]
         public required string Email { get; set; }
 
         [Required]
         [StringLength(100)]
+        [Column("passwordhash")]
         public required string PasswordHash { get; set; }
 
         public virtual ICollection<UserRole>? UserRole { get; set; }

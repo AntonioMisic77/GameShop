@@ -8,15 +8,18 @@ namespace ProdavaonicaIgaraAPI.Models
     {
         [Key]
         [Required]
+        [Column("id")]
         public int Id { get; set; }
 
         [Required]
+        [Column("cashierid")]
         public int CashierId { get; set; }
 
         [ForeignKey(nameof(CashierId))]
         public User? Cashier { get; set; }
 
         [Required]
+        [Column("companyid")]
         public int CompanyId { get; set; }
 
         [ForeignKey(nameof(CompanyId))]
@@ -24,11 +27,13 @@ namespace ProdavaonicaIgaraAPI.Models
 
         [Required]
         [StringLength(50)]
-        public int PaymentMethod { get; set; }
+        [Column("paymentmethod")]
+        public required string PaymentMethod { get; set; }
 
         [Required]
+        [Column("date")]
         public DateTime? Date { get; set; }
 
-        public virtual ICollection<ReceiptItem>? ReceiptItems { get; set; }
+        public virtual IEnumerable<ReceiptItem>? ReceiptItems { get; set; }
     }
 }

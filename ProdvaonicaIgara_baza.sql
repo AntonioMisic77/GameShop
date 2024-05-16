@@ -56,8 +56,9 @@ CREATE TABLE articles (
 CREATE TABLE receiptItems (
     id SERIAL PRIMARY KEY,
     receiptId INTEGER REFERENCES receipts(id),
-    articleId INTEGER REFERENCES articles(id) UNIQUE,
-    quantity INTEGER NOT NULL
+    articleId INTEGER REFERENCES articles(id),
+    quantity INTEGER NOT NULL,
+	UNIQUE(receiptId,articleId)
 );
 
 
@@ -99,8 +100,8 @@ INSERT INTO receipts (cashierId, companyId,paymentMethod, date) VALUES
 (1, 1,'Debit Card', '2024-04-11 09:45:00');
 
 
-INSERT INTO receiptItems (receiptId, articleId, quantity, totalPrice) VALUES
-(1, 1, 2, 99.98),
-(1, 2, 1, 39.99),
-(2, 2, 1, 39.99),
-(3, 1, 2, 99.98);
+INSERT INTO receiptItems (receiptId, articleId, quantity) VALUES
+(1, 1, 2),
+(1, 2, 1),
+(2, 2, 1),
+(3, 1, 2);

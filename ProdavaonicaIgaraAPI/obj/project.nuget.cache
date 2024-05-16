@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c4bQihzHBHJ0O8XT2/EzDBnM00V2PPYKcQM1TbGX1Gyk805RRIOFAkcCrPsUJIUVOO2NsAR9pu6ehOhO0rIqGQ==",
+  "dgSpecHash": "RoSGfX2G610Fq1MkyB6QniA1Lf43BjkMwz/B6E1ab0/c9pHk1NKRo3Q+4DjDgX4wnX8jj6rM91EzW6+5goT3RQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\ProdavaonicaIgaraAPI.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "C:\\Users\\Antonio\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Antonio\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\Antonio\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Antonio\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Antonio\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\Antonio\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
     "C:\\Users\\Antonio\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.1\\swashbuckle.aspnetcore.6.6.1.nupkg.sha512",

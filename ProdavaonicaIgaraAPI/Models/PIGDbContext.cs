@@ -21,5 +21,7 @@ namespace ProdavaonicaIgaraAPI.Models
         public DbSet<User> Users { get; set; }
 
         public DbSet<UserRole> UserRoles { get; set; }
+
+        public DbSet<Supplier> Suppliers { get; set; }
     }
 }
