@@ -48,7 +48,6 @@ namespace ProdavaonicaIgaraAPI.Services
             };
         }
 
-
         public async Task<ReceiptItemDto> CreateReceiptItemAsync(ReceiptItemDto receiptItemDto)
         {
             var checkUnique = await _receiptItemRepository.checkUniqueRecipteItem(receiptItemDto.ArticleId,receiptItemDto.ReceiptId);
@@ -62,7 +61,7 @@ namespace ProdavaonicaIgaraAPI.Services
 
             if (article.StockQuantity < receiptItemDto.Quantity)
             {
-                throw new Exception("Not enough stock quantity");
+                throw new NotEnoughQuantity("Not enough stock quantity");
             }
 
             article.StockQuantity -= receiptItemDto.Quantity;
@@ -86,7 +85,7 @@ namespace ProdavaonicaIgaraAPI.Services
 
             if (( article.StockQuantity + oldReceiptItemQuantity) < receiptItemDto.Quantity)
             {
-                throw new Exception("Not enough stock quantity");
+                throw new NotEnoughQuantity("Not enough stock quantity");
             }
 
             if ( diff < 0)

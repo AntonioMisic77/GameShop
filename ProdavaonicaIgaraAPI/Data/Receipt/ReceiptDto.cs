@@ -24,13 +24,12 @@ namespace ProdavaonicaIgaraAPI.Data.Receipt
         public required string PaymentMethod { get; set; }
 
         [Required]
-        public DateTime? Date { get; set; }
+        public DateTime Date { get; set; }
 
         public virtual IEnumerable<ReceiptItemDto>? ReceiptItems { get; set; }
 
 
         public CompanyDto? CompanyDto { get; set; }
-
         public UserDto? Cashier { get; set; }
 
     }

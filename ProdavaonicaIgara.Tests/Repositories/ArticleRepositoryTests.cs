@@ -49,16 +49,18 @@ namespace ProdavaonicaIgara.Tests.Repositories
 
             context.SaveChanges();
 
+            var article = new Article
+            {
+                Id = 1,
+                Name = "Article1",
+                Description = "Description1",
+                Price = 100,
+                SupplierId = 1
+            };
+
             context.Articles.AddRangeAsync(new List<Article>
             {
-                new Article
-                {
-                    Id = 1,
-                    Name = "Article1",
-                    Description = "Description1",
-                    Price = 100,
-                    SupplierId = 1
-                },
+                article,
                 new Article
                 {
                     Id = 2,
@@ -92,8 +94,9 @@ namespace ProdavaonicaIgara.Tests.Repositories
                     SupplierId = 1
                 }
             });
-
             context.SaveChanges();
+
+           context.Entry(article).State = EntityState.Detached;
         }
 
         [Fact]
@@ -152,12 +155,7 @@ namespace ProdavaonicaIgara.Tests.Repositories
             var _context = GetDbContext();
             initalizeDb(_context);
 
-            var mockGenericRepository = new Mock<IGenericRepository<Article>>();
-
-            mockGenericRepository.Setup(repo => repo.CreateAsync(It.IsAny<Article>()))
-                .ReturnsAsync((Article source) => source);
-
-            var articleRepository = new ArticleRepository(mockGenericRepository.Object,_context);
+            var articleRepository = new ArticleRepository(new GenericRepository<Article>(_context),_context);
 
             var article = new Article
             {
@@ -175,6 +173,8 @@ namespace ProdavaonicaIgara.Tests.Repositories
             Assert.Equal(600, createdArticle.Price);
             Assert.Equal(1, createdArticle.SupplierId);
 
+            Assert.Equal(_context.Articles.Count(), 6);
+
         }
 
         [Fact]
@@ -183,12 +183,7 @@ namespace ProdavaonicaIgara.Tests.Repositories
             var _context = GetDbContext();
             initalizeDb(_context);
 
-            var mockGenericRepository = new Mock<IGenericRepository<Article>>();
-
-            mockGenericRepository.Setup(repo => repo.UpdateAsync(It.IsAny<Article>()))
-                .ReturnsAsync((Article source) => source);
-
-            var articleRepository = new ArticleRepository(mockGenericRepository.Object,_context);
+            var articleRepository = new ArticleRepository(new GenericRepository<Article>(_context),_context);
 
             var article = new Article
             {
@@ -214,12 +209,7 @@ namespace ProdavaonicaIgara.Tests.Repositories
             var _context = GetDbContext();
             initalizeDb(_context);
 
-            var mockGenericRepository = new Mock<IGenericRepository<Article>>();
-
-            mockGenericRepository.Setup(repo => repo.DeleteAsync(1))
-                .ReturnsAsync((int id) => _context.Articles.FirstOrDefault(a => a.Id == id));
-
-            var articleRepository = new ArticleRepository(mockGenericRepository.Object,_context);
+            var articleRepository = new ArticleRepository(new GenericRepository<Article>(_context),_context);
 
             var deletedArticle = await articleRepository.DeleteAsync(1);
 
@@ -227,6 +217,8 @@ namespace ProdavaonicaIgara.Tests.Repositories
             Assert.Equal("Description1", deletedArticle.Description);
             Assert.Equal(100, deletedArticle.Price);
             Assert.Equal(1, deletedArticle.SupplierId);
+
+            Assert.Equal(_context.Articles.Count(), 4);
 
         }
     }
