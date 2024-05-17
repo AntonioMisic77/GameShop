@@ -5,7 +5,7 @@ using ProdavaonicaIgaraAPI.Services.ReceiptItem;
 
 namespace ProdavaonicaIgaraAPI.Controllers
 {
-    [Route("api/receiptitem")]
+    [Route("api/ReceiptItem")]
     [ApiController]
     public class ReceiptItemController : ControllerBase
     {

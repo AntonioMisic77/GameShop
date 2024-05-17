@@ -8,12 +8,10 @@ namespace ProdavaonicaIgaraAPI.Repositories.GenericRepository
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly PIGDbContext _context;
-        private readonly IMapper _mapper;
 
-        public GenericRepository(PIGDbContext context, IMapper mapper)
+        public GenericRepository(PIGDbContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
         public async Task<T> GetAsync(int id)
         {
