@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\projects\\fakultet\\infsus\\prodavaonicaigara\\prodavaonicaigaraapi\\repositories\\receipt\\receiptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:repositories\\receipt\\receiptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\projects\\fakultet\\infsus\\prodavaonicaigara\\prodavaonicaigaraapi\\controllers\\receiptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:controllers\\receiptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\controllers\\receiptitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:controllers\\receiptitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +35,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReceiptRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Repositories\\Receipt\\ReceiptRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Receipt\\ReceiptRepository.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Repositories\\Receipt\\ReceiptRepository.cs",
+              "RelativeToolTip": "Repositories\\Receipt\\ReceiptRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCMAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T18:33:30.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReceiptItemController.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptItemController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReceiptItemController.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptItemController.cs",
+              "RelativeToolTip": "Controllers\\ReceiptItemController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T17:43:06.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReceiptController.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReceiptController.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptController.cs",
+              "RelativeToolTip": "Controllers\\ReceiptController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAQwFYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T17:41:42.012Z",
+              "EditorCaption": ""
             }
           ]
         },

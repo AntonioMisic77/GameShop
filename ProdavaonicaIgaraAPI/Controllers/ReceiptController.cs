@@ -32,7 +32,7 @@ namespace ProdavaonicaIgaraAPI.Controllers
         }
 
         [HttpPost("paged")]
-        public async Task<ActionResult<PagedResult<ArticleDto>>> GetArticlesAsync(QueryParametars parametars)
+        public async Task<ActionResult<PagedResult<ReceiptDto>>> GetReceiptAsync(QueryParametars parametars)
         {
             var receipts = await _receiptService.GetReceiptsAsync(parametars);
 
@@ -46,7 +46,7 @@ namespace ProdavaonicaIgaraAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ReceiptDto>> CreateArticleAsync(ReceiptDto receiptDto)
+        public async Task<ActionResult<ReceiptDto>> CreateReceiptAsync(ReceiptDto receiptDto)
         {
            var createdReceipt = await _receiptService.CreateReceiptAsync(receiptDto);
 
@@ -59,7 +59,7 @@ namespace ProdavaonicaIgaraAPI.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<ReceiptDto>> UpdateArticleAsync(ReceiptDto receiptDto)
+        public async Task<ActionResult<ReceiptDto>> UpdateReceiptAsync(ReceiptDto receiptDto)
         {
             var updatedArticle = await _receiptService.UpdateReceiptAsync(receiptDto);
 
@@ -74,7 +74,7 @@ namespace ProdavaonicaIgaraAPI.Controllers
 
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<ReceiptDto>> DeleteArticle(int id)
+        public async Task<ActionResult<ReceiptDto>> DeleteReceipt(int id)
         {
            var deletedReceipt = await _receiptService.DeleteReceipt(id);
 
