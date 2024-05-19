@@ -33,6 +33,7 @@ namespace ProdavaonicaIgaraAPI.Repositories
         public async Task<List<Receipt>> GetPagedReceipts(QueryParametars parametars)
         {
             return await _context.Receipts.AsNoTracking()
+                        .Include(a => a.Company)
                         .Include(a => a.Cashier)
                         .Include(r => r.ReceiptItems)
                         .ThenInclude(ri => ri.Article)
