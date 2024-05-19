@@ -29,7 +29,7 @@ namespace ProdavaonicaIgaraAPI.Data.Receipt
         public virtual IEnumerable<ReceiptItemDto>? ReceiptItems { get; set; }
 
 
-        public CompanyDto? CompanyDto { get; set; }
+        public CompanyDto? Company { get; set; }
         public UserDto? Cashier { get; set; }
 
     }

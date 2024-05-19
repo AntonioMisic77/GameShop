@@ -42,15 +42,15 @@ namespace ProdavaonicaIgaraAPI.Services.Receipt
         }
 
 
-        public async Task<ReceiptDto> CreateReceiptAsync(ReceiptDto articleDto)
+        public async Task<ReceiptDto> CreateReceiptAsync(ReceiptDto receiptDto)
         {
-            var receipts = await _receiptRepository.CreateAsync(_mapper.Map<Models.Receipt>(articleDto));
+            var receipts = await _receiptRepository.CreateAsync(_mapper.Map<Models.Receipt>(receiptDto));
             return _mapper.Map<ReceiptDto>(receipts);
         }
 
-        public async Task<ReceiptDto> UpdateReceiptAsync(ReceiptDto articleDto)
+        public async Task<ReceiptDto> UpdateReceiptAsync(ReceiptDto receiptDto)
         {
-            var receipt = await _receiptRepository.UpdateAsync(_mapper.Map<Models.Receipt>(articleDto));
+            var receipt = await _receiptRepository.UpdateAsync(_mapper.Map<Models.Receipt>(receiptDto));
             return _mapper.Map<ReceiptDto>(receipt);
         }
 

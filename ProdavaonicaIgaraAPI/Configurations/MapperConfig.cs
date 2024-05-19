@@ -14,11 +14,9 @@ namespace ProdavaonicaIgaraAPI.Configurations
 
             CreateMap<Models.User,Data.User.UserDto>().ReverseMap();
 
-            CreateMap<Models.Receipt, Data.Receipt.ReceiptDto>()
-                .ForMember(dest => dest.CompanyDto, opt => opt.Ignore());
+            CreateMap<Models.Receipt, Data.Receipt.ReceiptDto>().ReverseMap();
 
-            CreateMap<Data.Receipt.ReceiptDto, Models.Receipt>();
-
+            CreateMap<Models.Company, Data.Company.CompanyDto>().ReverseMap();
 
             CreateMap<Models.ReceiptItem, Data.ReceiptItem.ReceiptItemDto>().ReverseMap();
         }
