@@ -12,7 +12,7 @@ export class SupplierService {
   constructor(private http: HttpClient) { }
 
   getSuppliers(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}/suppliers`).pipe(
+    return this.http.get<any[]>(`${this.apiUrl}/api/Supplier`).pipe(
       map(response => response as any[]) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }

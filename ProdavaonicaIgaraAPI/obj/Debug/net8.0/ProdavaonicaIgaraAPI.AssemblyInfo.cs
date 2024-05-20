@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProdavaonicaIgaraAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f645e8e012f6b4d9c942393f603c44045aa70328")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b462eeefe711e87586e09f494fe4e60dccd45de1")]
->>>>>>> 0894bda4146cd422797883582a828e4cba686ccd
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d84297aa36b21f9e461e0a428a09b4b1f29c7ebd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProdavaonicaIgaraAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProdavaonicaIgaraAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

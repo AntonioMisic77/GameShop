@@ -24,7 +24,7 @@ export class ReceiptService {
   }
 
   createReceipt(receipt: any): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}/receipt`, receipt).pipe(
+    return this.http.post<any>(`${this.apiUrl}/api/receipt`, receipt).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }
@@ -36,7 +36,7 @@ export class ReceiptService {
   }
 
   deleteReceipt(id: number): Observable<any> {
-    return this.http.delete<any>(`${this.apiUrl}/receipts/${id}`).pipe(
+    return this.http.delete<any>(`${this.apiUrl}/api/receipt/${id}`).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }

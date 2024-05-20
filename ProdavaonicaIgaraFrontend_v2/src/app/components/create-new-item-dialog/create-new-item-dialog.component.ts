@@ -1,17 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, ValidationErrors, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { ArticleService } from '../../services/articleService';
 import { QueryParametars } from '../../pageing/QueryParametars.model';
 import { ArticleDto } from '../../models/ArticleDto.model';
 import { ReceiptItemService } from '../../services/receiptItemService';
 import { PagedResult } from '../../pageing/PagedResult.model';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+
+function nonNegativeValidator(control: AbstractControl): ValidationErrors | null {
+  const value = control.value;
+  return value < 0 ? { nonNegative: true } : null;
+}
+
 
 @Component({
   selector: 'app-create-new-item-dialog',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, MatDialogModule, FormsModule ],
+  imports: [ReactiveFormsModule, CommonModule, MatDialogModule, FormsModule, MatSnackBarModule ],
   templateUrl: './create-new-item-dialog.component.html',
   styleUrl: './create-new-item-dialog.component.css'
 })
@@ -26,14 +33,14 @@ export class CreateNewItemDialogComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public selectedReceipt: any,
     private formBuilder: FormBuilder,
     private articleService: ArticleService,
-    private receiptItemService: ReceiptItemService
+    private receiptItemService: ReceiptItemService,
+    private snackBar: MatSnackBar
   ) { this.queryParametars = new QueryParametars(0, 1, " ", 10);
-  this.queryParametars.filterText = " "
   this.newItemForm = this.formBuilder.group({
     id: Int16Array,
-    quantity: Int16Array,
+    quantity: ['', [Validators.required, nonNegativeValidator]],
     receiptId: this.selectedReceipt.selectedReceipt.id,
-    articleId: Int16Array
+    articleId:  ['', Validators.required]
   });
   }
 
@@ -71,18 +78,33 @@ export class CreateNewItemDialogComponent implements OnInit {
   }
 
   onSaveClick(): void {
-    if (this.newItemForm?.valid) {
+    if (this.newItemForm.valid) {
       const newItemData = this.newItemForm.value;
       console.log(newItemData)
       // Ovdje možete dodati logiku za spremanje novog itema
       this.receiptItemService.createReceiptItem(newItemData).subscribe((result:any)=>{
+        this.snackBar.open('Receipt item created successfully!', 'Close', {
+          duration: 3000,
+          verticalPosition: 'bottom',
+          horizontalPosition: 'center'
+        });
         this.dialogRef.close(result)
       },
       (error: any) => {
-        console.error('Error creating receiptItem:', error);
+        this.snackBar.open(error.error.Message, 'Close', {
+          duration: 3000,
+          verticalPosition: 'bottom',
+          horizontalPosition: 'center'
+        });
       }
     );
-       // Proslijedi podatke ako je potrebno
+    } else {
+      console.log("inace")
+      this.snackBar.open('Please correct the errors in the form', 'Close', {
+        duration: 3000,
+        verticalPosition: 'bottom',
+        horizontalPosition: 'center'
+      });
     }
   }
 }

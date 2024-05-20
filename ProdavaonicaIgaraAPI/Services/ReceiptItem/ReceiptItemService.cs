@@ -82,7 +82,6 @@ namespace ProdavaonicaIgaraAPI.Services
         {
             var article = await _articleService.GetArticleAsync(receiptItemDto.ArticleId);
 
-
             var oldReceiptItemQuantity = (await _receiptItemRepository.GetAsync(receiptItemDto.Id)).Quantity;
 
             int diff = receiptItemDto.Quantity - oldReceiptItemQuantity;

@@ -25,19 +25,19 @@ export class ArticleService {
   }
 
   createArticle(article: any): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}/articles`, article).pipe(
+    return this.http.post<any>(`${this.apiUrl}/api/article`, article).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }
 
   updateArticle(article: any): Observable<any> {
-    return this.http.put<any>(`${this.apiUrl}/articles/${article.id}`, article).pipe(
+    return this.http.put<any>(`${this.apiUrl}/api/article/`, article).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }
 
   deleteArticle(id: number): Observable<any> {
-    return this.http.delete<any>(`${this.apiUrl}/articles/${id}`).pipe(
+    return this.http.delete<any>(`${this.apiUrl}/api/article/${id}`).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }

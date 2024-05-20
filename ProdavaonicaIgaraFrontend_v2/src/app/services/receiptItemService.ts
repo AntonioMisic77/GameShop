@@ -30,7 +30,7 @@ export class ReceiptItemService {
   }
 
   updateReceiptItem(receiptItem: any): Observable<any> {
-    return this.http.put<any>(`${this.apiUrl}/receipt-items/${receiptItem.id}`, receiptItem).pipe(
+    return this.http.put<any>(`${this.apiUrl}/api/ReceiptItem/`, receiptItem).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }

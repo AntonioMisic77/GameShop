@@ -5,7 +5,7 @@ h2 {
   }
   
   /* Stilizacija za formu */
-  .new-item-form {
+  .edit-item-form {
     margin-bottom: 20px;
   }
   
@@ -63,8 +63,3 @@ h2 {
     font-size: 12px;
     margin-bottom: 14px;
   }
-  /* items.component.css */
-.error-message {
-  color: red;
-}
-
