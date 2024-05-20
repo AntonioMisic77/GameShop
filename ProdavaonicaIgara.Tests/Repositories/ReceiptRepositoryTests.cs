@@ -20,6 +20,7 @@ namespace ProdavaonicaIgara.Tests.Repositories
 {
     public class ReceiptRepositoryTests
     {
+        #region metods
         private PIGDbContext GetDbContext()
         {
             var connection = new SqliteConnection("DataSource=:memory:");
@@ -113,7 +114,9 @@ namespace ProdavaonicaIgara.Tests.Repositories
             context.SaveChanges();
 
         }
+        #endregion
 
+        #region tests
         [Fact]
         public async void ReceiptRepository_GetPagedReceipts_ReturnsPagedReciptesWithRecipteItems()
         {
@@ -232,5 +235,7 @@ namespace ProdavaonicaIgara.Tests.Repositories
 
             Assert.Equal(_context.Receipts.AsNoTracking().Count(), 0);
         }
+
+        #endregion
     }
 }

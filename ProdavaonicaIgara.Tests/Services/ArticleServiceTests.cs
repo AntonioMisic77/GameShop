@@ -16,7 +16,7 @@ namespace ProdavaonicaIgara.Tests.Services
 {
     public class ArticleServiceTests
     {
-
+        #region metods
         private async Task<IMapper> GetMapper()
         {
             var mappingConfig = new MapperConfiguration(mc =>
@@ -26,7 +26,9 @@ namespace ProdavaonicaIgara.Tests.Services
             IMapper mapper = mappingConfig.CreateMapper();
             return mapper;
         }
+        #endregion
 
+        #region tests
         [Fact]
         public async void ArticleService_GetPagedArticles_ReturnsPagedArticles()
         {
@@ -134,5 +136,6 @@ namespace ProdavaonicaIgara.Tests.Services
             Assert.IsType<ArticleDto>(deletedArticle);
 
         }
+        #endregion
     }
 }
