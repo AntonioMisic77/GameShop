@@ -1,0 +1,152 @@
+<div class="container">
+    <h2>Articles 
+      <button *ngIf="!showNewArticleForm && !showEditArticleForm" (click)="toggleNewArticleForm()" class="btn btn-success btn-sm">New Article</button>
+    </h2>
+    <input *ngIf="!showNewArticleForm && !showEditArticleForm" type="text" class="form-control" placeholder="Search" [(ngModel)]="searchQuery" (input)="searchArticles()">
+  
+    <div *ngIf="showNewArticleForm && !showEditArticleForm" class="new-article-form">
+      <h3>Create New Article</h3>
+      <form [formGroup]="newArticleForm" (ngSubmit)="createArticle()">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" formControlName="name" class="form-control" required>
+          <div *ngIf="this.newArticleForm.controls['name']?.touched && !newArticleForm.controls['name'].value" class="error-message">
+            Name is required.
+            </div>
+            <div *ngIf="newArticleForm.controls['name'].hasError('maxlength')" class="error-message">
+                Name cannot be longer than 100 characters.
+              </div>
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <input type="text" id="description" formControlName="description" class="form-control" required>
+          <div *ngIf="this.newArticleForm.controls['description']?.touched && !newArticleForm.controls['description'].value" class="error-message">
+            Description is required.
+           </div>
+        </div>
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <input type="number" id="price" formControlName="price" class="form-control" required>
+          <div *ngIf="this.newArticleForm.controls['price']?.touched && !newArticleForm.controls['price'].value" class="error-message">
+            Price is required.
+           </div>
+           <div *ngIf="newArticleForm.controls['price'].hasError('nonNegative')" class="error-message">
+            Price must be a non-negative number.
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="stockQuantity">Stock quantity:</label>
+            <input type="number" id="stockQuantity" formControlName="stockQuantity" class="form-control" required>
+            <div *ngIf="this.newArticleForm.controls['stockQuantity']?.touched && !newArticleForm.controls['stockQuantity'].value" class="error-message">
+                Stock quantity is required.
+               </div>
+               <div *ngIf="newArticleForm.controls['stockQuantity'].hasError('nonNegative')" class="error-message">
+                Stock Quantity must be a non-negative number.
+              </div>
+          </div>
+        <div class="form-group">
+            <label for="supplier">Supplier:</label>
+            <select id="supplier" formControlName="supplierId" class="form-control" style="width:100%">
+              <option *ngFor="let supplier of suppliers" [value]="supplier.id">{{ supplier.name }}</option>
+            </select>
+            <div *ngIf="this.newArticleForm.controls['supplierId']?.touched && !newArticleForm.controls['supplierId'].value" class="error-message">
+                Supplier is required.
+               </div>
+          </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-secondary" (click)="toggleNewArticleForm()">Cancel</button>
+      </form>
+    </div>
+  
+    <div *ngIf="!showNewArticleForm && !showEditArticleForm" class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let article of articles; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ article.name }}</td>
+            <td>{{ article.description }}</td>
+            <td>{{ article.price }}</td>
+            <td>{{ article.stockQuantity }}</td>
+            <td>
+              <button (click)="editArticleToggle(article)" class="btn btn-primary btn-sm">Edit</button>
+              <button (click)="deleteArticle(article.id)" class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div *ngIf="showEditArticleForm && !showNewArticleForm" class="edit-article-form">
+        <h3>Edit Article</h3>
+        <form [formGroup]="newArticleForm" (ngSubmit)="editArticle()">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" formControlName="name" class="form-control" required>
+            <div *ngIf="this.newArticleForm.controls['name']?.touched && !newArticleForm.controls['name'].value" class="error-message">
+                Name is required.
+            </div>
+            <div *ngIf="newArticleForm.controls['name'].hasError('maxlength')" class="error-message">
+                Name cannot be longer than 100 characters.
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" id="description" formControlName="description" class="form-control" required>
+            <div *ngIf="this.newArticleForm.controls['description']?.touched && !newArticleForm.controls['description'].value" class="error-message">
+                Description is required.
+               </div>
+          </div>
+          <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" formControlName="price" class="form-control" required>
+            <div *ngIf="this.newArticleForm.controls['price']?.touched && !newArticleForm.controls['price'].value" class="error-message">
+                Price is required.
+               </div>
+               <div *ngIf="newArticleForm.controls['price'].hasError('nonNegative')" class="error-message">
+                Price must be a non-negative number.
+              </div>
+          </div>
+          <div class="form-group">
+            <label for="stockQuantity">Stock quantity:</label>
+            <input type="number" id="stockQuantity" formControlName="stockQuantity" class="form-control" required>
+            <div *ngIf="this.newArticleForm.controls['stockQuantity']?.touched && !newArticleForm.controls['stockQuantity'].value" class="error-message">
+                Stock quantity is required.
+               </div>
+               <div *ngIf="newArticleForm.controls['stockQuantity'].hasError('nonNegative')" class="error-message">
+                Stock Quantity must be a non-negative number.
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="supplier">Supplier:</label>
+              <select id="supplier" formControlName="supplierId" class="form-control" style="width:100%">
+                <option *ngFor="let supplier of suppliers" [value]="supplier.id">{{ supplier.name }}</option>
+              </select>
+              <div *ngIf="this.newArticleForm.controls['supplierId']?.touched && !newArticleForm.controls['supplierId'].value" class="error-message">
+                Supplier is required.
+               </div>
+            </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+        </form>
+      </div>
+
+    <div *ngIf="!showNewArticleForm && !showEditArticleForm" class="pagination-info">
+      Page {{ queryParametars.pageNumber }} of {{ pageCount() }}
+    </div>
+  
+    <div *ngIf="!showNewArticleForm && !showEditArticleForm" class="navigation-buttons">
+      <button type="button" class="btn btn-secondary" (click)="previousPage()" [disabled]="queryParametars.pageNumber === 1">Previous</button>
+      <button type="button" class="btn btn-secondary" (click)="nextPage()" [disabled]="queryParametars.pageNumber >= pageCount()">Next</button>
+    </div>
+  </div>
+  
