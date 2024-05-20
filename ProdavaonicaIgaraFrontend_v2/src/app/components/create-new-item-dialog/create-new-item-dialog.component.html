@@ -1,0 +1,21 @@
+<div class="container">
+<h2>Create New Item</h2>
+<div>
+  <form class="new-item-form" [formGroup]="newItemForm">
+    <div class="form-group">
+      <label for="article">Article</label>
+      <select class="form-control" id="article" formControlName="articleId">
+        <option *ngFor="let article of articles" [value]="article.id">{{article.name}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" class="form-control" id="quantity" formControlName="quantity">
+    </div>
+  </form>
+</div>
+<div>
+  <button type="button" class="btn btn-danger" (click)="onCancelClick()">Cancel</button>
+  <button type="button" class="btn btn-primary" (click)="onSaveClick()" [disabled]="!newItemForm.valid">Save</button>
+</div>
+</div>

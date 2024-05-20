@@ -1,0 +1,56 @@
+/* Stilizacija za glavni naslov */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Stilizacija za formu */
+  .new-item-form {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right:15px;
+  }
+  
+  /* Stilizacija za gumbi */
+  .btn {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: #fff;
+    margin-right:15px
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border: 1px solid #c82333;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border: 1px solid #0056b3;
+  }
+  .container {
+    margin: 20px; /* Dodajte željenu marginu */
+    padding: 20px; /* Dodajte željeni padding */
+    border: 1px solid #ccc; /* Opcionalno: dodajte obrub ako želite vizualni odvajanje od ostalog sadržaja */
+    border-radius: 5px; /* Opcionalno: zaobljeni rubovi */
+  }

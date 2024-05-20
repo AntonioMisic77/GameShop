@@ -18,19 +18,19 @@ export class ReceiptService {
   }
 
   getReceipts(params: any): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}/api/receipt/paged`, { params }).pipe(
+    return this.http.post<any>(`${this.apiUrl}/api/receipt/paged`,  params ).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }
 
   createReceipt(receipt: any): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}/receipts`, receipt).pipe(
+    return this.http.post<any>(`${this.apiUrl}/receipt`, receipt).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }
 
   updateReceipt(receipt: any): Observable<any> {
-    return this.http.put<any>(`${this.apiUrl}/api/receipt/`, receipt).pipe(
+    return this.http.put<any>(`${this.apiUrl}/api/receipt`, receipt).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }
