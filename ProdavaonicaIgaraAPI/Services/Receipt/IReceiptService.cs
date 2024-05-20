@@ -6,6 +6,7 @@ namespace ProdavaonicaIgaraAPI.Services.Receipt
 {
     public interface IReceiptService
     {
+        #region methods
         Task<ReceiptDto> GetReceiptAsync(int id);
 
         Task<PagedResult<ReceiptDto>> GetReceiptsAsync(QueryParametars parametars);
@@ -15,5 +16,7 @@ namespace ProdavaonicaIgaraAPI.Services.Receipt
         Task<ReceiptDto> UpdateReceiptAsync(ReceiptDto articleDto);
 
         Task<ReceiptDto> DeleteReceipt(int id);
+
+        #endregion
     }
 }

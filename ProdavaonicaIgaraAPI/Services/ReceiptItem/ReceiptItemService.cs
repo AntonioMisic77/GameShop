@@ -11,17 +11,22 @@ namespace ProdavaonicaIgaraAPI.Services
 {
     public class ReceiptItemService : IReceiptItemService
     {
+        #region properties
         private readonly IReceiptItemRepository _receiptItemRepository;
         private readonly IArticleService _articleService;
         private readonly IMapper _mapper;
+        #endregion
 
+        #region ctor
         public ReceiptItemService(IReceiptItemRepository receiptItemRepository,IArticleService articleService,IMapper mapper)
         {
             _receiptItemRepository = receiptItemRepository;
             _articleService = articleService;
             _mapper = mapper;
         }
+        #endregion
 
+        #region methods
         public async Task<ReceiptItemDto> GetReceiptItemAsync(int id)
         {
             var receiptItem = await _receiptItemRepository.GetAsync(id);
@@ -68,9 +73,9 @@ namespace ProdavaonicaIgaraAPI.Services
 
             await _articleService.UpdateArticleAsync(article);
 
-            var createdRecipteItem = await _receiptItemRepository.CreateAsync(_mapper.Map<Models.ReceiptItem>(receiptItemDto));
+            var createdReceipteItem = await _receiptItemRepository.CreateAsync(_mapper.Map<Models.ReceiptItem>(receiptItemDto));
 
-           return _mapper.Map<ReceiptItemDto>(createdRecipteItem);
+           return _mapper.Map<ReceiptItemDto>(createdReceipteItem);
         }
 
         public async Task<ReceiptItemDto> UpdateReceiptItemAsync(ReceiptItemDto receiptItemDto)
@@ -108,6 +113,7 @@ namespace ProdavaonicaIgaraAPI.Services
            var deletedReceiptItem = await _receiptItemRepository.DeleteAsync(id);
            return _mapper.Map<ReceiptItemDto>(deletedReceiptItem);
         }
-        
+
+        #endregion
     }
 }

@@ -2,6 +2,8 @@
 {
     public class QueryParametars
     {
+        #region properties
+
         private int _pageSize = 10;
 
         public int StartIndex { get; set; }
@@ -21,6 +23,8 @@
             {
                 _pageSize = value;
             }
-        }   
+        }
+        
+        #endregion
     }
 }

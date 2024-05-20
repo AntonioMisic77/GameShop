@@ -7,15 +7,20 @@ namespace ProdavaonicaIgaraAPI.Repositories
 {
     public class ArticleRepository : IArticleRepository
     {
+        #region properties
         private readonly IGenericRepository<Article> _genericRepository;
         private readonly PIGDbContext _context;
+        #endregion
 
+        #region ctor
         public ArticleRepository(IGenericRepository<Article> genericRepository, PIGDbContext context)
         {
             _genericRepository = genericRepository;
             _context = context;
         }
+        #endregion
 
+        #region methods
         public Task<Article> GetAsync(int id)
         {
             return _context.Articles.AsNoTracking().Include(a => a.Supplier).FirstOrDefaultAsync(a => a.Id == id);
@@ -61,6 +66,8 @@ namespace ProdavaonicaIgaraAPI.Repositories
         {
             return _genericRepository.DeleteAsync(id);
         }
+
+        #endregion
 
     }
 }

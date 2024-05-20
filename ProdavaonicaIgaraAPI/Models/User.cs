@@ -9,6 +9,7 @@ namespace ProdavaonicaIgaraAPI.Models
     [Index(nameof(Email),IsUnique = true)]
     public class User
     {
+        #region properties
         [Key]
         [Required]
         [Column("id")]
@@ -44,5 +45,7 @@ namespace ProdavaonicaIgaraAPI.Models
         public required string PasswordHash { get; set; }
 
         public virtual ICollection<UserRole>? UserRole { get; set; }
+
+        #endregion
     }
 }

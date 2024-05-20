@@ -8,14 +8,21 @@ namespace ProdavaonicaIgaraAPI.Repositories
 {
     public class ReceiptItemRepository : IReceiptItemRepository
     {
+        #region properties
         private readonly PIGDbContext _context;
         private readonly IGenericRepository<ReceiptItem> _genericRepository;
+        #endregion
 
+        #region ctor
         public ReceiptItemRepository(IGenericRepository<ReceiptItem> genericRepository,PIGDbContext context)
         {
             _context = context;
             _genericRepository = genericRepository;
         }
+
+        #endregion
+
+        #region methods
         public async Task<ReceiptItem> GetAsync(int id)
         {
             return  await _context.ReceiptItems.AsNoTracking()
@@ -65,6 +72,8 @@ namespace ProdavaonicaIgaraAPI.Repositories
         {
             return await _context.ReceiptItems.AnyAsync(a => a.ArticleId == articleId && a.ReceiptId == recipteId);
         }
-       
+
+        #endregion
+
     }
 }

@@ -4,10 +4,13 @@ namespace ProdavaonicaIgaraAPI.Models
 {
     public class PIGDbContext : DbContext
     {
+        #region ctor
         public PIGDbContext(DbContextOptions<PIGDbContext> options) : base(options)
         {
         }
+        #endregion
 
+        #region properties
         public DbSet<Article> Articles { get; set; }
 
         public DbSet<Company> Companies { get; set; }
@@ -23,5 +26,7 @@ namespace ProdavaonicaIgaraAPI.Models
         public DbSet<UserRole> UserRoles { get; set; }
 
         public DbSet<Supplier> Suppliers { get; set; }
+
+        #endregion
     }
 }

@@ -7,6 +7,7 @@ namespace ProdavaonicaIgaraAPI.Models
     [Table("articles")]
     public class Article
     {
+        #region properties
         [Key]
         [Required]
         [Column("id")]
@@ -36,5 +37,7 @@ namespace ProdavaonicaIgaraAPI.Models
         [Required]
         [Column("stockquantity")]
         public int StockQuantity { get; set; }
+
+        #endregion
     }
 }

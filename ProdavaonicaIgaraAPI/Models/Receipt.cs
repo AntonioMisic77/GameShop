@@ -6,6 +6,7 @@ namespace ProdavaonicaIgaraAPI.Models
     [Table("receipts")]
     public class Receipt
     {
+        #region properties
         [Key]
         [Required]
         [Column("id")]
@@ -35,5 +36,7 @@ namespace ProdavaonicaIgaraAPI.Models
         public DateTime? Date { get; set; }
 
         public virtual IEnumerable<ReceiptItem>? ReceiptItems { get; set; }
+
+        #endregion
     }
 }

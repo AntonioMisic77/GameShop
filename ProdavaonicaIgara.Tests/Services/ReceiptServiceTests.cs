@@ -20,6 +20,7 @@ namespace ProdavaonicaIgara.Tests.Services
 {
     public class ReceiptServiceTests
     {
+        #region metods
         private async Task<IMapper> GetMapper()
         {
             var mappingConfig = new MapperConfiguration(mc =>
@@ -29,7 +30,9 @@ namespace ProdavaonicaIgara.Tests.Services
             IMapper mapper = mappingConfig.CreateMapper();
             return mapper;
         }
+        #endregion
 
+        #region tests
         [Fact]
         public async void ReceiptService_GetPagedReceipts_ReturnsPagedReceipts()
         {
@@ -125,5 +128,7 @@ namespace ProdavaonicaIgara.Tests.Services
             Assert.Equal(1, receiptDeleteCount);
             Assert.Equal(1, receiptItemDeleteCount);
         }
+
+        #endregion
     }
 }

@@ -7,12 +7,18 @@ namespace ProdavaonicaIgaraAPI.Repositories.GenericRepository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
+        #region properties
         private readonly PIGDbContext _context;
+        #endregion
 
+        #region ctor
         public GenericRepository(PIGDbContext context)
         {
             _context = context;
         }
+        #endregion
+
+        #region methods
         public async Task<T> GetAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id);
@@ -50,7 +56,8 @@ namespace ProdavaonicaIgaraAPI.Repositories.GenericRepository
             await _context.SaveChangesAsync();
 
             return entity;
-        }   
+        }
 
+        #endregion
     }
 }

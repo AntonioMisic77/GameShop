@@ -9,6 +9,7 @@ namespace ProdavaonicaIgaraAPI.Data.Receipt
 {
     public class ReceiptDto
     {
+        #region properties
         [Key]
         [Required]
         public int Id { get; set; }
@@ -31,5 +32,6 @@ namespace ProdavaonicaIgaraAPI.Data.Receipt
         public CompanyDto? Company { get; set; }
         public UserDto? Cashier { get; set; }
 
+        #endregion
     }
 }

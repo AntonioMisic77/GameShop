@@ -18,6 +18,7 @@ namespace ProdavaonicaIgara.Tests.Repositories
 
     public class ArticleRepositoryTests
     {
+        #region metods
         private PIGDbContext GetDbContext()
         {
             var connection = new SqliteConnection("DataSource=:memory:");
@@ -98,7 +99,9 @@ namespace ProdavaonicaIgara.Tests.Repositories
 
            context.Entry(article).State = EntityState.Detached;
         }
+        #endregion
 
+        #region tests
         [Fact]
         public async void ArticleRepository_GetPagedArticles_ReturnsPagedArticles()
         {
@@ -221,5 +224,7 @@ namespace ProdavaonicaIgara.Tests.Repositories
             Assert.Equal(_context.Articles.Count(), 4);
 
         }
+
+        #endregion
     }
 }

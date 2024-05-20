@@ -8,12 +8,19 @@ namespace ProdavaonicaIgaraAPI.Controllers
     [ApiController]
     public class SupplierController : ControllerBase
     {
+        #region properties
         private readonly ISupplierService _supplierService;
+        #endregion
+
+        #region ctor
         public SupplierController(ISupplierService supplierService)
         {
             _supplierService = supplierService;
         }
 
+        #endregion
+
+        #region  endpoints
         [HttpGet]
         public async Task<ActionResult<SupplierDto>> GetSuppliersAsync()
         {
@@ -67,6 +74,8 @@ namespace ProdavaonicaIgaraAPI.Controllers
 
             return Ok(supplier);
         }
+
+        #endregion
 
     }
 }

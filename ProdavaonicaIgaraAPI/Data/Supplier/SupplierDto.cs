@@ -4,6 +4,7 @@ namespace ProdavaonicaIgaraAPI.Data.Supplier
 {
     public class SupplierDto
     {
+        #region properties
         public int Id { get; set; }
 
         [Required]
@@ -19,6 +20,7 @@ namespace ProdavaonicaIgaraAPI.Data.Supplier
         [Required]
         [StringLength(100)]
         public required string Email { get; set; }
-       
+
+        #endregion
     }
 }

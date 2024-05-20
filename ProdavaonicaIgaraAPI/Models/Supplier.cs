@@ -8,6 +8,7 @@ namespace ProdavaonicaIgaraAPI.Models
     [Index(nameof(Email), IsUnique = true)]
     public class Supplier
     {
+        #region properties
         [Key]
         [Required]
         [Column("id")]
@@ -30,6 +31,7 @@ namespace ProdavaonicaIgaraAPI.Models
         [StringLength(100)]
         [Column("email")]
         public required string Email { get; set; }
-        
+
+        #endregion
     }
 }

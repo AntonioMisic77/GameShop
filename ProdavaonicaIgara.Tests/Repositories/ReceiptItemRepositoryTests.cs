@@ -13,6 +13,7 @@ namespace ProdavaonicaIgara.Tests.Repositories
 {
     public class ReceiptItemRepositoryTests
     {
+        #region metods
         private PIGDbContext GetDbContext()
         {
             var connection = new SqliteConnection("DataSource=:memory:");
@@ -113,6 +114,9 @@ namespace ProdavaonicaIgara.Tests.Repositories
             context.Entry(receiptItem).State = EntityState.Detached;
 
         }
+        #endregion
+
+        #region tests
 
         [Fact]
         public async void ReceiptItemRepository_CreateReceiptItem_CreatesReceiptItem()
@@ -181,5 +185,7 @@ namespace ProdavaonicaIgara.Tests.Repositories
             Assert.NotNull(deletedReceiptItem);
             Assert.Equal(0, context.ReceiptItems.Count());
         }
+
+        #endregion 
     }
 }

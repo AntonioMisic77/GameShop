@@ -9,17 +9,22 @@ namespace ProdavaonicaIgaraAPI.Services.Receipt
 {
     public class ReceiptService : IReceiptService
     {
+        #region properties
         private readonly IReceiptRepository _receiptRepository;
         private readonly IReceiptItemService _receiptItemService;
         private readonly IMapper _mapper;
+        #endregion
 
+        #region ctor
         public ReceiptService(IReceiptRepository receiptRepository, IMapper mapper,IReceiptItemService receiptItemService)
         {
             _receiptRepository = receiptRepository;
             _receiptItemService = receiptItemService;
             _mapper = mapper;
         }
+        #endregion
 
+        #region methods
         public async Task<ReceiptDto> GetReceiptAsync(int id)
         {
            var receipt = await _receiptRepository.GetAsync(id);
@@ -41,16 +46,15 @@ namespace ProdavaonicaIgaraAPI.Services.Receipt
             };
         }
 
-
-        public async Task<ReceiptDto> CreateReceiptAsync(ReceiptDto articleDto)
+        public async Task<ReceiptDto> CreateReceiptAsync(ReceiptDto receiptDto)
         {
-            var receipts = await _receiptRepository.CreateAsync(_mapper.Map<Models.Receipt>(articleDto));
+            var receipts = await _receiptRepository.CreateAsync(_mapper.Map<Models.Receipt>(receiptDto));
             return _mapper.Map<ReceiptDto>(receipts);
         }
 
-        public async Task<ReceiptDto> UpdateReceiptAsync(ReceiptDto articleDto)
+        public async Task<ReceiptDto> UpdateReceiptAsync(ReceiptDto receiptDto)
         {
-            var receipt = await _receiptRepository.UpdateAsync(_mapper.Map<Models.Receipt>(articleDto));
+            var receipt = await _receiptRepository.UpdateAsync(_mapper.Map<Models.Receipt>(receiptDto));
             return _mapper.Map<ReceiptDto>(receipt);
         }
 
@@ -66,6 +70,7 @@ namespace ProdavaonicaIgaraAPI.Services.Receipt
             var deletedReceipt = await _receiptRepository.DeleteAsync(id);
 
             return _mapper.Map<ReceiptDto>(deletedReceipt);
-        }  
+        }
+        #endregion
     }
 }

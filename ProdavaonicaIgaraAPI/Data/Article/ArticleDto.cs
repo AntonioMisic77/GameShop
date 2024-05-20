@@ -6,6 +6,7 @@ namespace ProdavaonicaIgaraAPI.Data.Articles
 {
     public class ArticleDto
     {
+        #region properties
         public int Id { get; set; }
 
         [Required]
@@ -25,7 +26,8 @@ namespace ProdavaonicaIgaraAPI.Data.Articles
         [Required]
         public int StockQuantity { get; set; }
 
-
         public SupplierDto? Supplier { get; set; }
+
+        #endregion
     }
 }
