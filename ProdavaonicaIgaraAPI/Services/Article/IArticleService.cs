@@ -5,6 +5,7 @@ namespace ProdavaonicaIgaraAPI.Services
 {
     public interface IArticleService
     {
+        #region methods
 
         Task<ArticleDto> GetArticleAsync(int id);
 
@@ -15,5 +16,7 @@ namespace ProdavaonicaIgaraAPI.Services
         Task<ArticleDto> UpdateArticleAsync(ArticleDto articleDto);
 
         Task<ArticleDto> DeleteArticle(int id);
+
+        #endregion
     }
 }

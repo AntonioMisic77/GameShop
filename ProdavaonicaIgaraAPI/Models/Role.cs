@@ -8,6 +8,7 @@ namespace ProdavaonicaIgaraAPI.Models
     [Index(nameof(Name),IsUnique = true)]
     public class Role
     {
+        #region properties
         [Key]
         [Required]
         [Column("id")]
@@ -17,5 +18,7 @@ namespace ProdavaonicaIgaraAPI.Models
         [StringLength(50)]
         [Column("name")]
         public required string Name { get; set; }
+
+        #endregion
     }
 }

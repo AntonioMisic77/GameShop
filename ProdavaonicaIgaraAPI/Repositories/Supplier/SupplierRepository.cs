@@ -6,15 +6,21 @@ namespace ProdavaonicaIgaraAPI.Repositories
 {
     public class SupplierRepository : ISupplierRepository
     {
+        #region properties
         private readonly IGenericRepository<Supplier> _genericRepository;
         private readonly PIGDbContext _context;
+        #endregion
 
+        #region ctor
         public SupplierRepository(IGenericRepository<Supplier> genericRepository, PIGDbContext context) 
         { 
             _genericRepository = genericRepository;
             _context = context;
         }
-         public Task<Supplier> GetAsync(int id)
+        #endregion
+
+        #region methods
+        public Task<Supplier> GetAsync(int id)
         {
             return _genericRepository.GetAsync(id);
         }
@@ -43,7 +49,6 @@ namespace ProdavaonicaIgaraAPI.Repositories
         {
             return _context.Suppliers.AnyAsync(x => x.Email == email);
         }
-
-       
+        #endregion
     }
 }

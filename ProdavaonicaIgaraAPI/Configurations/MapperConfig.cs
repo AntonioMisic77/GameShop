@@ -6,6 +6,8 @@ namespace ProdavaonicaIgaraAPI.Configurations
     {
         public MapperConfig()
         {
+            #region mappings
+
             CreateMap<Models.Article, Data.Articles.ArticleDto>().ReverseMap();
 
             CreateMap<Models.Supplier,Data.Supplier.SupplierDto>().ReverseMap();
@@ -19,6 +21,8 @@ namespace ProdavaonicaIgaraAPI.Configurations
             CreateMap<Models.Company, Data.Company.CompanyDto>().ReverseMap();
 
             CreateMap<Models.ReceiptItem, Data.ReceiptItem.ReceiptItemDto>().ReverseMap();
+
+            #endregion
         }
     }
 }

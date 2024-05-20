@@ -9,15 +9,23 @@ namespace ProdavaonicaIgaraAPI.Services
 {
     public class ArticleService : IArticleService
     {
+        #region properties
+
         private readonly IArticleRepository _articleRepository;
         private readonly IMapper _mapper;
 
+        #endregion
+
+        #region ctor
         public ArticleService(IArticleRepository articleRepository,IMapper mapper)
         {
             _articleRepository = articleRepository;
             _mapper = mapper;
         }
 
+        #endregion
+
+        #region methods
         public async Task<ArticleDto> GetArticleAsync(int id)
         {
             var article = await _articleRepository.GetAsync(id);
@@ -61,5 +69,6 @@ namespace ProdavaonicaIgaraAPI.Services
             return _mapper.Map<ArticleDto>(deletedArticle);
         }
      
+        #endregion
     }
 }

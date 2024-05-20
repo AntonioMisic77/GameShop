@@ -8,6 +8,7 @@ namespace ProdavaonicaIgaraAPI.Models
     [Index(nameof(UserId), nameof(RoleId), IsUnique = true)]    
     public class UserRole
     {
+        #region properties
         [Key]
         [Required]
         [Column("id")]
@@ -26,5 +27,7 @@ namespace ProdavaonicaIgaraAPI.Models
 
         [ForeignKey(nameof(RoleId))]
         public Role? Role { get; set; }
+
+        #endregion
     }
 }

@@ -9,12 +9,18 @@ namespace ProdavaonicaIgaraAPI.Controllers
     [ApiController]
     public class ArticleController : ControllerBase
     {
+        #region properties
         private readonly IArticleService _articleService;
+        #endregion
 
+        #region ctor
         public ArticleController(IArticleService articleService)
         {
             _articleService = articleService;
         }
+        #endregion
+
+        #region endpoints
 
         [HttpGet("{id}")]
         public async Task<ActionResult<ArticleDto>> GetArticleAsync(int id)
@@ -76,5 +82,7 @@ namespace ProdavaonicaIgaraAPI.Controllers
 
             return Ok(deletedArticle);
         }
+
+        #endregion
     }
 }

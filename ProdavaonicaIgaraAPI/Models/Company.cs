@@ -6,6 +6,7 @@ namespace ProdavaonicaIgaraAPI.Models
     [Table("company")]
     public class Company
     {
+        #region properties
         [Key]
         [Required]
         [Column("id")]
@@ -28,5 +29,6 @@ namespace ProdavaonicaIgaraAPI.Models
         [Column("phone")]
         public string? Phone { get; set; }
 
+        #endregion
     }
 }

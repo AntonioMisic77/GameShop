@@ -9,13 +9,20 @@ namespace ProdavaonicaIgaraAPI.Services
 {
     public class SupplierService : ISupplierService
     {
+        #region properties
         private readonly ISupplierRepository _supplierRepository;
         private readonly IMapper _mapper;
+        #endregion
+
+        #region ctor
         public SupplierService(ISupplierRepository supplierRepository,IMapper mapper)
         {
             _supplierRepository = supplierRepository;
             _mapper = mapper;
         }
+        #endregion
+
+        #region methods
         public async Task<IEnumerable<SupplierDto>> GetSuppliersAsync()
         {
             var suppliers = await _supplierRepository.GetAllAsync();
@@ -55,6 +62,8 @@ namespace ProdavaonicaIgaraAPI.Services
             var supplier = await _supplierRepository.DeleteAsync(id);
 
             return _mapper.Map<SupplierDto>(supplier);
-        }   
+        }
+        
+        #endregion
     }
 }

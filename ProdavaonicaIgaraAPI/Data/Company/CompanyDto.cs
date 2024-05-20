@@ -4,6 +4,7 @@ namespace ProdavaonicaIgaraAPI.Data.Company
 {
     public class CompanyDto
     {
+        #region properties
         public int Id { get; set; }
 
         [Required]
@@ -19,5 +20,6 @@ namespace ProdavaonicaIgaraAPI.Data.Company
         [StringLength(20)]
         public string? Phone { get; set; }
 
+        #endregion
     }
 }

@@ -5,7 +5,8 @@ namespace ProdavaonicaIgaraAPI.Services
 {
     public interface IUserService
     {
-
+        #region methods
         Task<List<UserDto>> GetUsersAsync();
+        #endregion
     }
 }

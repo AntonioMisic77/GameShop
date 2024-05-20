@@ -8,6 +8,7 @@ namespace ProdavaonicaIgaraAPI.Models
     [Index(nameof(ArticleId),nameof(ReceiptId),IsUnique = true)]
     public class ReceiptItem
     {
+        #region properties
         [Key]
         [Required]
         [Column("id")]
@@ -30,5 +31,6 @@ namespace ProdavaonicaIgaraAPI.Models
         [Required]
         [Column("quantity")]
         public int Quantity { get; set; }
+        #endregion
     }
 }

@@ -5,6 +5,7 @@ namespace ProdavaonicaIgaraAPI.Data.User
 {
     public class UserDto
     {
+        #region properties
         public int Id { get; set; }
 
         [Required]
@@ -26,5 +27,6 @@ namespace ProdavaonicaIgaraAPI.Data.User
         [StringLength(100)]
         public required string Email { get; set; }
 
+        #endregion
     }
 }

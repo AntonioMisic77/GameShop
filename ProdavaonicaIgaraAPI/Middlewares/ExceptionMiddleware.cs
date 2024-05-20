@@ -9,8 +9,20 @@ namespace ProdavaonicaIgaraAPI.Middlewares
 {
     public class ExceptionMiddleware : IMiddleware
     {
+        #region ctor
         public ExceptionMiddleware() {}
+        #endregion
 
+        #region helper
+        private class ErrorDetails
+        {
+            public string? ErrorType { get; set; }
+
+            public string? Message { get; set; }
+        }
+        #endregion
+
+        #region methods
         public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
             try
@@ -55,11 +67,7 @@ namespace ProdavaonicaIgaraAPI.Middlewares
 
         }
 
-        private class ErrorDetails
-        {
-            public string? ErrorType { get; set; }
-
-            public string? Message { get; set; }
-        }
+        #endregion
+        
     }
 }

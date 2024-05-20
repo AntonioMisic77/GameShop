@@ -9,11 +9,18 @@ namespace ProdavaonicaIgaraAPI.Controllers
     [ApiController]
     public class ReceiptItemController : ControllerBase
     {
+        #region properties
         private readonly IReceiptItemService _receiptItemService;
+        #endregion
+
+        #region ctor
         public ReceiptItemController(IReceiptItemService receiptItemService)
         {
             _receiptItemService = receiptItemService;
         }
+        #endregion
+
+        #region endpoints
 
         [HttpGet("{id}")]
         public async Task<ActionResult<ReceiptItemDto>> GetReceiptItem(int id)
@@ -78,5 +85,6 @@ namespace ProdavaonicaIgaraAPI.Controllers
             return Ok(receiptItem);
         }
 
+        #endregion
     }
 }

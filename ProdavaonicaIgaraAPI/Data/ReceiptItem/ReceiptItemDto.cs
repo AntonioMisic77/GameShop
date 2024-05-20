@@ -7,6 +7,7 @@ namespace ProdavaonicaIgaraAPI.Data.ReceiptItem
 {
     public class ReceiptItemDto
     {
+        #region properties
         public int Id { get; set; }
 
         [Required]
@@ -19,5 +20,7 @@ namespace ProdavaonicaIgaraAPI.Data.ReceiptItem
         public int Quantity { get; set; }
 
         public ArticleDto? Article { get; set; }
+
+        #endregion
     }
 }

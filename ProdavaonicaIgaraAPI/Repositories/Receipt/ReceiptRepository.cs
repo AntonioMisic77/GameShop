@@ -7,15 +7,20 @@ namespace ProdavaonicaIgaraAPI.Repositories
 {
     public class ReceiptRepository : IReceiptRepository
     {
+        #region properties
         private readonly IGenericRepository<Receipt> _genericRepository;
         private readonly PIGDbContext _context;
+        #endregion
 
+        #region ctor
         public ReceiptRepository(IGenericRepository<Receipt> genericRepository, PIGDbContext context)
         {
             _genericRepository = genericRepository;
             _context = context;
         }
+        #endregion
 
+        #region methods
         public Task<Receipt> GetAsync(int id)
         {
             return _context.Receipts
@@ -62,5 +67,7 @@ namespace ProdavaonicaIgaraAPI.Repositories
         {
             return _genericRepository.DeleteAsync(id);
         }
+
+        #endregion
     }
 }

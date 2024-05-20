@@ -10,13 +10,19 @@ namespace ProdavaonicaIgaraAPI.Controllers
     [ApiController]
     public class ReceiptController : ControllerBase
     {
+        #region properties
         private readonly IReceiptService _receiptService;
+        #endregion
 
+        #region ctor
         public ReceiptController(IReceiptService receiptService)
         {
             _receiptService = receiptService;
         }
 
+        #endregion
+
+        #region endpoints
 
         [HttpGet("{id}")]
         public async Task<ActionResult<ReceiptDto>> GetReceiptAsync(int id)
@@ -61,14 +67,14 @@ namespace ProdavaonicaIgaraAPI.Controllers
         [HttpPut]
         public async Task<ActionResult<ReceiptDto>> UpdateReceiptAsync(ReceiptDto receiptDto)
         {
-            var updatedArticle = await _receiptService.UpdateReceiptAsync(receiptDto);
+            var updatedReceipt = await _receiptService.UpdateReceiptAsync(receiptDto);
 
-            if (updatedArticle == null)
+            if (updatedReceipt == null)
             {
                 return BadRequest();
             }
 
-            return Ok(updatedArticle);
+            return Ok(updatedReceipt);
             
         }
 
@@ -85,6 +91,8 @@ namespace ProdavaonicaIgaraAPI.Controllers
 
             return Ok(deletedReceipt);
         }
+
+        #endregion
 
     }
 }
