@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { QueryParametars } from '../pageing/QueryParametars.model';
 
 @Injectable({
   providedIn: 'root'
@@ -17,8 +18,8 @@ export class ArticleService {
     );
   }
 
-  getArticles(params: any): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/articles`, { params }).pipe(
+  getArticles(params: QueryParametars): Observable<any> {
+    return this.http.post<any>(`${this.apiUrl}/api/article/paged`, params).pipe(
       map(response => response as any) // Ako je potrebno mapiranje, ovdje možeš koristiti mapirati na svoje DTO modele
     );
   }

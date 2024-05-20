@@ -1,37 +1,101 @@
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h2 {
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-check-label {
-    margin-left: 5px;
-  }
-  
-  .btn {
-    margin-right: 10px;
-  }
-  
-  .pageing {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .pageing button {
-    margin: 0 5px;
-  }
-  
-  .pageing span {
-    margin: 0 10px;
-  }
-  
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+select,
+input[type="radio"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.payment-method {
+  margin-bottom: 20px;
+}
+
+.payment-method-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group label {
+  font-weight: bold; /* Debljina fonta za naslov */
+  display: block; /* Postavite oznaku kao blok element kako bi se prikazala u novom redu */
+  margin-bottom: 10px; /* Dodajte razmak ispod naslova */
+}
+
+.form-check {
+  display: inline-block; /* Postavite form-check divove kao inline-blok elemente */
+  margin-right: 20px; /* Dodajte razmak između form-check elemenata */
+}
+
+.form-check-input {
+  margin-right: 5px; /* Dodajte razmak s desne strane form-check inputa */
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.btn-secondary:hover {
+  background-color: gray;
+}
+.btn-secondary {
+  width: 48%;
+}
