@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-
+import { Component } from '@angular/core';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone:true,
+  standalone: true,
+  imports: [RouterOutlet, RouterModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
-  title = 'ProdavaonicaIgaraFrontend';
+export class AppComponent {
+  title = 'ProdavaonicaIgaraFrontend_v2';
 
   constructor(private router: Router) {}
 
@@ -19,5 +19,8 @@ export class AppComponent implements OnInit {
 
   navigateToReceipts() {
     this.router.navigate(['/receipts']);
+  }
+  navigateToArticles(){
+    this.router.navigate(['/articles'])
   }
 }
