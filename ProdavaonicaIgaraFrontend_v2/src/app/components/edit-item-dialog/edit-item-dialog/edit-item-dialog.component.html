@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>Edit Item</h2>
+    <div>
+      <form class="new-item-form" [formGroup]="editItemForm">
+        <div class="form-group">
+          <label for="article">Article</label>
+          <select class="form-control" id="article" formControlName="articleId">
+            <option *ngFor="let article of articles" [value]="article.id">{{article.name}}</option>
+          </select>
+          <div *ngIf="this.editItemForm.controls['articleId']?.touched && !editItemForm.controls['articleId'].value" class="error-message">
+            Article is required.
+           </div>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity</label>
+          <input type="number" class="form-control" id="quantity" formControlName="quantity">
+          <div *ngIf="this.editItemForm.controls['quantity']?.touched && !editItemForm.controls['quantity'].value" class="error-message">
+            Quantity is required.
+           </div>
+           <div *ngIf="editItemForm.controls['quantity'].hasError('nonNegative') && editItemForm.controls['quantity'].touched" class="error-message">
+            Quantity cannot be negative.
+          </div>
+        </div>
+      </form>
+    </div>
+    <div>
+      <button type="button" class="btn btn-danger" (click)="onCancelClick()">Cancel</button>
+      <button type="button" class="btn btn-primary" (click)="onSaveClick()">Save</button>
+    </div>
+    </div>

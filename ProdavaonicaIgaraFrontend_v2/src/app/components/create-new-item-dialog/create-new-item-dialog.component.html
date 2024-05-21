@@ -7,15 +7,24 @@
       <select class="form-control" id="article" formControlName="articleId">
         <option *ngFor="let article of articles" [value]="article.id">{{article.name}}</option>
       </select>
+      <div *ngIf="this.newItemForm.controls['articleId']?.touched && !newItemForm.controls['articleId'].value" class="error-message">
+        Article is required.
+       </div>
     </div>
     <div class="form-group">
       <label for="quantity">Quantity</label>
       <input type="number" class="form-control" id="quantity" formControlName="quantity">
+      <div *ngIf="this.newItemForm.controls['quantity']?.touched && !newItemForm.controls['quantity'].value" class="error-message">
+        Quantity is required.
+       </div>
+       <div *ngIf="newItemForm.controls['quantity'].hasError('nonNegative') && newItemForm.controls['quantity'].touched" class="error-message">
+          Quantity cannot be negative.
+        </div>
     </div>
   </form>
 </div>
 <div>
   <button type="button" class="btn btn-danger" (click)="onCancelClick()">Cancel</button>
-  <button type="button" class="btn btn-primary" (click)="onSaveClick()" [disabled]="!newItemForm.valid">Save</button>
+  <button type="button" class="btn btn-primary" (click)="onSaveClick()" >Save</button>
 </div>
 </div>

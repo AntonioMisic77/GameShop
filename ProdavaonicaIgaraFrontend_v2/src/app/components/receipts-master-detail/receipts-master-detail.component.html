@@ -1,8 +1,43 @@
 <div class="container">
-  <h2>Receipts</h2>
+  <h2>Receipts <button type="button" class="btn btn-primary" (click)="toggleNewReceiptForm()" style="margin-left: 20px;">
+    {{ isCreatingNewReceipt ? 'Cancel' : 'New Receipt' }}
+  </button></h2>
+  
+  <div *ngIf="isCreatingNewReceipt">
+    <form [formGroup]="newReceiptForm" (ngSubmit)="createNewReceipt()">
+      <div class="form-group">
+        <label for="cashierId" style="font-size:20px">User:</label>
+        <select formControlName="cashierId" id="cashierId" class="form-control" (change)="onChangeUserWhenCreating($event)">
+          <option *ngFor="let user of users" [value]="user.id">
+            {{ user.firstName }} {{ user.lastName }}
+          </option>
+        </select>
+        <div *ngIf="this.newReceiptForm.controls['cashierId']?.touched && !newReceiptForm.controls['cashierId'].value" class="error-message">
+          Cashier is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label style="font-size:20px">Payment method:</label>
+        <div class="form-check">
+          <label for="creditCard" class="form-check-label">Credit Card</label>
+          <input type="radio" formControlName="paymentMethod" id="creditCard" value="Credit Card" class="form-check-input">
+        </div>
+        <div class="form-check">
+          <label for="cash" class="form-check-label">Cash</label>
+          <input type="radio" formControlName="paymentMethod" id="cash" value="Cash" class="form-check-input">
+        </div>
+        <div *ngIf="this.newReceiptForm.controls['paymentMethod']?.touched && !newReceiptForm.controls['paymentMethod'].value" class="error-message">
+          Payment method is required.
+          </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
 
   <!-- Forma za prikaz detalja računa -->
-  <form [formGroup]="receiptForm" (ngSubmit)="saveReceipt()">
+  <form *ngIf="!isCreatingNewReceipt"[formGroup]="receiptForm" (ngSubmit)="saveReceipt()">
     <div class="form-group">
       <label for="cashierId"style="font-size:20px">User:</label>
       <select formControlName="cashierId" id="cashierId" class="form-control"(change)="onChangeUser($event)">
@@ -31,13 +66,16 @@
     <button type="button" class="btn btn-danger" (click)="deleteReceipt()" [disabled]="!selectedReceipt">Delete</button>
     
   </form>
-
-  <div class="navigation-buttons" style="margin-top: 20px;">
-    <button type="button" class="btn btn-secondary" (click)="previousPage()" [disabled]="queryParametars.pageNumber === 1">Previous receipt</button>
-    <button type="button" class="btn btn-secondary" (click)="nextPage()" [disabled]="queryParametars.pageNumber >= pageCount() - 1">Next receipt</button>
+  <div *ngIf="!isCreatingNewReceipt" class="pagination-info">
+    Page {{ queryParametars.pageNumber }} of {{ pageCount() }}
   </div>
 
-  <div *ngIf="selectedReceipt">
+  <div *ngIf="!isCreatingNewReceipt" class="navigation-buttons" style="margin-top: 20px;">
+    <button type="button" class="btn btn-secondary" (click)="previousPage()" [disabled]="queryParametars.pageNumber === 1">Previous receipt</button>
+    <button type="button" class="btn btn-secondary" (click)="nextPage()" [disabled]="queryParametars.pageNumber >= pageCount()">Next receipt</button>
+  </div>
+
+  <div *ngIf="selectedReceipt && !isCreatingNewReceipt">
     <h3>Receipt Items</h3>
     <table class="table">
       <thead>
@@ -56,13 +94,13 @@
           <td>{{ item.quantity }}</td>
           <td>{{ item.article.price * item.quantity }}</td>
           <td>
-            <button (click)="editItem(item)" class="btn-edit">Uredi</button> <!-- Button za uređivanje -->
-            <button (click)="deleteItem(item)" class="btn-delete">Obriši</button> <!-- Button za brisanje -->
+            <button (click)="editItem(item)" class="btn-edit">Edit</button> <!-- Button za uređivanje -->
+            <button (click)="deleteItem(item)" class="btn-delete">Delete</button> <!-- Button za brisanje -->
           </td>
         </tr>
       </tbody>
     </table>
   </div>
-  <button class="btn-primary" (click)="createNewItem()" style="margin-top:10px">New receipt item</button>
+  <button *ngIf="!isCreatingNewReceipt" class="btn-primary" (click)="createNewItem()" style="margin-top:10px">New receipt item</button>
 
 </div>

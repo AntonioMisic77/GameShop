@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProdavaonicaIgaraAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37eb1dc8228d87039d6a1fe0cb790ac5b78547cf")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d84297aa36b21f9e461e0a428a09b4b1f29c7ebd")]
+>>>>>>> 0d20c348f5dd01ffc515d1c90ba21aeb5311de78
 [assembly: System.Reflection.AssemblyProductAttribute("ProdavaonicaIgaraAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProdavaonicaIgaraAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
