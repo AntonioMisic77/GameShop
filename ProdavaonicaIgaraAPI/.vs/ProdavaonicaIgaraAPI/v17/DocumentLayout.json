@@ -1,160 +1,36 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\",
-  "Documents": [],
-=======
-  "WorkspaceRootPath": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\services\\receiptitem\\receiptitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:services\\receiptitem\\receiptitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\services\\receipt\\ireceiptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:services\\receipt\\ireceiptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\services\\receipt\\receiptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:services\\receipt\\receiptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\services\\article\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:services\\article\\articleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\services\\supplier\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:services\\supplier\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\repositories\\receipt\\receiptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:repositories\\receipt\\receiptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\receipt\\receiptdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\receipt\\receiptdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\configurations\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:configurations\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\repositories\\article\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:repositories\\article\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\pageing\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\pageing\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\pageing\\queryparametars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\pageing\\queryparametars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\repositories\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:repositories\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\controllers\\receiptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\projects\\fakultet\\infsus\\prodavaonicaigara\\prodavaonicaigaraapi\\controllers\\receiptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:controllers\\receiptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\article\\articledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\article\\articledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\projects\\fakultet\\infsus\\prodavaonicaigara\\prodavaonicaigaraapi\\repositories\\article\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:repositories\\article\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\repositories\\article\\iarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:repositories\\article\\iarticlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\projects\\fakultet\\infsus\\prodavaonicaigara\\prodavaonicaigaraapi\\repositories\\receiptitem\\ireceiptitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:repositories\\receiptitem\\ireceiptitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\repositories\\receipt\\ireceiptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:repositories\\receipt\\ireceiptrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\controllers\\receiptitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:controllers\\receiptitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\services\\article\\iarticleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:services\\article\\iarticleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\receiptitem\\receiptitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\receiptitem\\receiptitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{902F69E1-A7E1-4E78-97D0-B0C2A14E2D9A}|..\\ProdavaonicaIgara.Tests\\ProdavaonicaIgara.Tests.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigara.tests\\repositories\\receiptrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\models\\pigdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\projects\\fakultet\\infsus\\prodavaonicaigara\\prodavaonicaigaraapi\\models\\pigdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:models\\pigdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\projects\\fakultet\\infsus\\prodavaonicaigara\\prodavaonicaigaraapi\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\supplier\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\supplier\\supplierdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\models\\receipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:models\\receipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\exceptions\\notenoughquantity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\exceptions\\notenoughquantity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\exceptions\\uniqueconstraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\exceptions\\uniqueconstraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\company\\companydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\company\\companydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\services\\user\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:services\\user\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\data\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:data\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|c:\\users\\marin\\desktop\\prodavaonicaigara\\prodavaonica_igara\\prodavaonicaigaraapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E180D819-5D8E-46CA-B12C-81A275582D85}|ProdavaonicaIgaraAPI.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
->>>>>>> 0d20c348f5dd01ffc515d1c90ba21aeb5311de78
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -162,11 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": -1,
-=======
-          "SelectedChildIndex": 9,
->>>>>>> 0d20c348f5dd01ffc515d1c90ba21aeb5311de78
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -179,461 +51,97 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-<<<<<<< HEAD
-=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReceiptController.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReceiptController.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptController.cs",
+              "RelativeToolTip": "Controllers\\ReceiptController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwDcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T12:27:31.392Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ReceiptService.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Receipt\\ReceiptService.cs",
-              "RelativeDocumentMoniker": "Services\\Receipt\\ReceiptService.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Receipt\\ReceiptService.cs",
-              "RelativeToolTip": "Services\\Receipt\\ReceiptService.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAgwDYAAAA4AAAA",
+              "Title": "ArticleRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Repositories\\Article\\ArticleRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Article\\ArticleRepository.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Repositories\\Article\\ArticleRepository.cs",
+              "RelativeToolTip": "Repositories\\Article\\ArticleRepository.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwEwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:19:49.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "QueryParametars.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Pageing\\QueryParametars.cs",
-              "RelativeDocumentMoniker": "Data\\Pageing\\QueryParametars.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Pageing\\QueryParametars.cs",
-              "RelativeToolTip": "Data\\Pageing\\QueryParametars.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T22:24:00.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReceiptRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\Receipt\\ReceiptRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Receipt\\ReceiptRepository.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\Receipt\\ReceiptRepository.cs",
-              "RelativeToolTip": "Repositories\\Receipt\\ReceiptRepository.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwBYAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T20:27:45.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ReceiptDto.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Receipt\\ReceiptDto.cs",
-              "RelativeDocumentMoniker": "Data\\Receipt\\ReceiptDto.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Receipt\\ReceiptDto.cs",
-              "RelativeToolTip": "Data\\Receipt\\ReceiptDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:45:16.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MapperConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Configurations\\MapperConfig.cs",
-              "RelativeDocumentMoniker": "Configurations\\MapperConfig.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Configurations\\MapperConfig.cs",
-              "RelativeToolTip": "Configurations\\MapperConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:39:23.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-19T17:29:23.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReceiptItemService.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\ReceiptItem\\ReceiptItemService.cs",
-              "RelativeDocumentMoniker": "Services\\ReceiptItem\\ReceiptItemService.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\ReceiptItem\\ReceiptItemService.cs",
-              "RelativeToolTip": "Services\\ReceiptItem\\ReceiptItemService.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAIwFEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T21:37:03.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SupplierService.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Supplier\\SupplierService.cs",
-              "RelativeDocumentMoniker": "Services\\Supplier\\SupplierService.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Supplier\\SupplierService.cs",
-              "RelativeToolTip": "Services\\Supplier\\SupplierService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:22:57.48Z",
+              "WhenOpened": "2024-05-21T12:29:36.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ArticleService.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Article\\ArticleService.cs",
-              "RelativeDocumentMoniker": "Services\\Article\\ArticleService.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Article\\ArticleService.cs",
-              "RelativeToolTip": "Services\\Article\\ArticleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:21:48.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IReceiptService.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Receipt\\IReceiptService.cs",
-              "RelativeDocumentMoniker": "Services\\Receipt\\IReceiptService.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Receipt\\IReceiptService.cs",
-              "RelativeToolTip": "Services\\Receipt\\IReceiptService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:41:31.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PagedResult.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Pageing\\PagedResult.cs",
-              "RelativeDocumentMoniker": "Data\\Pageing\\PagedResult.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Pageing\\PagedResult.cs",
-              "RelativeToolTip": "Data\\Pageing\\PagedResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T21:01:19.329Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\User\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\User\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\User\\UserRepository.cs",
-              "RelativeToolTip": "Repositories\\User\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T09:22:46.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ArticleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\Article\\ArticleRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Article\\ArticleRepository.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\Article\\ArticleRepository.cs",
-              "RelativeToolTip": "Repositories\\Article\\ArticleRepository.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwB0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T00:02:34.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ArticleController.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Controllers\\ArticleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ArticleController.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Controllers\\ArticleController.cs",
-              "RelativeToolTip": "Controllers\\ArticleController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowCIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:46:12.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\User\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\User\\UserService.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\User\\UserService.cs",
-              "RelativeToolTip": "Services\\User\\UserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:23:03.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ReceiptController.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReceiptController.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptController.cs",
-              "RelativeToolTip": "Controllers\\ReceiptController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAADwvyQAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T18:22:16.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ArticleDto.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Article\\ArticleDto.cs",
-              "RelativeDocumentMoniker": "Data\\Article\\ArticleDto.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Article\\ArticleDto.cs",
-              "RelativeToolTip": "Data\\Article\\ArticleDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:43:11.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IReceiptRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\Receipt\\IReceiptRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Receipt\\IReceiptRepository.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\Receipt\\IReceiptRepository.cs",
-              "RelativeToolTip": "Repositories\\Receipt\\IReceiptRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T00:02:04.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IArticleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\Article\\IArticleRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\Article\\IArticleRepository.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Repositories\\Article\\IArticleRepository.cs",
-              "RelativeToolTip": "Repositories\\Article\\IArticleRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T00:02:12.251Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IArticleService.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Article\\IArticleService.cs",
-              "RelativeDocumentMoniker": "Services\\Article\\IArticleService.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\Article\\IArticleService.cs",
-              "RelativeToolTip": "Services\\Article\\IArticleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T00:01:42.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-19T17:29:39.477Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
+              "Title": "IReceiptItemRepository.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Repositories\\ReceiptItem\\IReceiptItemRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ReceiptItem\\IReceiptItemRepository.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Repositories\\ReceiptItem\\IReceiptItemRepository.cs",
+              "RelativeToolTip": "Repositories\\ReceiptItem\\IReceiptItemRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T22:45:34.369Z"
+              "WhenOpened": "2024-05-21T12:29:25.568Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ReceiptItemDto.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\ReceiptItem\\ReceiptItemDto.cs",
-              "RelativeDocumentMoniker": "Data\\ReceiptItem\\ReceiptItemDto.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\ReceiptItem\\ReceiptItemDto.cs",
-              "RelativeToolTip": "Data\\ReceiptItem\\ReceiptItemDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:46:00.999Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 6,
               "Title": "Article.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\Article.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Models\\Article.cs",
               "RelativeDocumentMoniker": "Models\\Article.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\Article.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Models\\Article.cs",
               "RelativeToolTip": "Models\\Article.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwCcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:43:38.544Z"
+              "WhenOpened": "2024-05-21T12:24:54.894Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "SupplierDto.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Supplier\\SupplierDto.cs",
-              "RelativeDocumentMoniker": "Data\\Supplier\\SupplierDto.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Supplier\\SupplierDto.cs",
-              "RelativeToolTip": "Data\\Supplier\\SupplierDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:46:57.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ReceiptRepositoryTests.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgara.Tests\\Repositories\\ReceiptRepositoryTests.cs",
-              "RelativeDocumentMoniker": "..\\ProdavaonicaIgara.Tests\\Repositories\\ReceiptRepositoryTests.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgara.Tests\\Repositories\\ReceiptRepositoryTests.cs",
-              "RelativeToolTip": "..\\ProdavaonicaIgara.Tests\\Repositories\\ReceiptRepositoryTests.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAADgv2YAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T21:50:58.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 5,
               "Title": "PIGDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\PIGDbContext.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Models\\PIGDbContext.cs",
               "RelativeDocumentMoniker": "Models\\PIGDbContext.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\PIGDbContext.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Models\\PIGDbContext.cs",
               "RelativeToolTip": "Models\\PIGDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAcwB0AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:43:35.409Z"
+              "WhenOpened": "2024-05-21T10:21:58.515Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAswBQAAAAuAAAA",
+              "DocumentIndex": 0,
+              "Title": "ArticleController.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ArticleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ArticleController.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ArticleController.cs",
+              "RelativeToolTip": "Controllers\\ArticleController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAA0wC8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T21:03:38.311Z"
+              "WhenOpened": "2024-05-21T10:19:11.726Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "ReceiptItemController.cs",
+              "DocumentMoniker": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptItemController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReceiptItemController.cs",
+              "ToolTip": "C:\\Projects\\fakultet\\INFSUS\\ProdavaonicaIgara\\ProdavaonicaIgaraAPI\\Controllers\\ReceiptItemController.cs",
+              "RelativeToolTip": "Controllers\\ReceiptItemController.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAIwFQAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:43:40.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Receipt.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\Receipt.cs",
-              "RelativeDocumentMoniker": "Models\\Receipt.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\Receipt.cs",
-              "RelativeToolTip": "Models\\Receipt.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:43:26.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UniqueConstraint.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Exceptions\\UniqueConstraint.cs",
-              "RelativeDocumentMoniker": "Data\\Exceptions\\UniqueConstraint.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Exceptions\\UniqueConstraint.cs",
-              "RelativeToolTip": "Data\\Exceptions\\UniqueConstraint.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T21:06:32.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "NotEnoughQuantity.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Exceptions\\NotEnoughQuantity.cs",
-              "RelativeDocumentMoniker": "Data\\Exceptions\\NotEnoughQuantity.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Exceptions\\NotEnoughQuantity.cs",
-              "RelativeToolTip": "Data\\Exceptions\\NotEnoughQuantity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T21:06:33.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\User\\UserDto.cs",
-              "RelativeDocumentMoniker": "Data\\User\\UserDto.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\User\\UserDto.cs",
-              "RelativeToolTip": "Data\\User\\UserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T21:03:21.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\User\\IUserService.cs",
-              "RelativeDocumentMoniker": "Services\\User\\IUserService.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Services\\User\\IUserService.cs",
-              "RelativeToolTip": "Services\\User\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:41:22.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CompanyDto.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Company\\CompanyDto.cs",
-              "RelativeDocumentMoniker": "Data\\Company\\CompanyDto.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Data\\Company\\CompanyDto.cs",
-              "RelativeToolTip": "Data\\Company\\CompanyDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:45:55.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Company.cs",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\Company.cs",
-              "RelativeDocumentMoniker": "Models\\Company.cs",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\Models\\Company.cs",
-              "RelativeToolTip": "Models\\Company.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T18:30:33.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Marin\\Desktop\\ProdavaonicaIgara\\Prodavaonica_Igara\\ProdavaonicaIgaraAPI\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-19T19:03:59.868Z"
->>>>>>> 0d20c348f5dd01ffc515d1c90ba21aeb5311de78
+              "WhenOpened": "2024-05-21T10:18:31.026Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -28,5 +28,6 @@ namespace ProdavaonicaIgaraAPI.Models
         public DbSet<Supplier> Suppliers { get; set; }
 
         #endregion
+
     }
 }

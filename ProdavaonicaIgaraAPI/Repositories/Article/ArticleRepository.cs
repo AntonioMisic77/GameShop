@@ -64,6 +64,16 @@ namespace ProdavaonicaIgaraAPI.Repositories
 
         public Task<Article> DeleteAsync(int id)
         {
+
+            var deleteingReceiptItems = _context.ReceiptItems.Where(ri => ri.ArticleId == id).ToList();
+
+            foreach (var item in deleteingReceiptItems)
+            {
+                _context.ReceiptItems.Remove(item);
+            }
+
+            _context.SaveChanges();
+
             return _genericRepository.DeleteAsync(id);
         }
 

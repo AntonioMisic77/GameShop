@@ -37,7 +37,7 @@ namespace ProdavaonicaIgaraAPI.Models
         [Required]
         [Column("stockquantity")]
         public int StockQuantity { get; set; }
-
+        
         #endregion
     }
 }
